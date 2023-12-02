@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.loading{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+   
+   
+}
+#square{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   
+    
+}
+#gap{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: 10;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.loading h1{
+    text-align: center;
+    color: #fff;
+    line-height: 0.8;
+    font-size: 28vmax;
+}
+.loading h1:nth-child(3){
+ position: absolute;
+ left: 3vw;
+ top: 3vw;
+}
+.loading h1:nth-child(5){
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+}
+@media only screen and (max-width: 600px) {
+    .loading h1 {
+        font-size: 26vmax;
+    }
+}
